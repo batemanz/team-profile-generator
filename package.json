@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "node to create team profile in html",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batemanz/team-profile-generator.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Nathan Kilcrease",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batemanz/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/batemanz/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  },
+  "devDependencies": {}
+}
