@@ -1,8 +1,6 @@
 // template for README.md  to be filled out by user
 function HTMLmarkdown(data) {
-    return `${data.Title}
-    ${renderLicenseBadge(data.license)}
-    <!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
