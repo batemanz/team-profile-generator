@@ -1,5 +1,5 @@
 // template for README.md  to be filled out by user
-function HTMLmarkdown(data) {
+function HTMLmarkdown(managersCards, engineerCards,  internCards) {
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +9,20 @@ function HTMLmarkdown(data) {
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-      <div class="cardContainer">
-        <p class="name">${data.name}</p>
-        <p class="id">${data.id}</p>
-        <p class="email">${data.email}</p>
-        <p class="officeNumber">${data.officeNumber}</p>
-        <p class="github">${data.github}</p>
-        <p class="school">${data.school}</p>
-      </div>
-    </div>
+  <div class="container">
+  ${managersCards.map((card) => {
+    return card;
+  })}
+  ${engineerCards.map((card) => {
+    return card;
+  })}
+  ${internCards.map((card) => {
+    return card;
+  })}
+  </div>
 </body>
 </html>
 `;
 }
   
-  module.exports = HTMLmarkdown;
+module.exports = HTMLmarkdown;
