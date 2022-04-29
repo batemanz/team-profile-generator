@@ -47,26 +47,29 @@ function writeToFile(fileName, data) {
       // this will give you an array of manager cards
       const managersCards = managersArray.map(manager => {
         return `  <div class="cardContainer">
-      <p class="name">${manager.name}</p>
-      <p class="id">${manager.id}</p>
-      <p class="email">${manager.email}</p>
-      <p class="officeNumber">${manager.officeNumber}</p>
+      <h1>${manager.getRole()}</h1>
+      <p class="name">Name: ${manager.name}</p>
+      <p class="id">ID#: ${manager.id}</p>
+      <p class="email">Email: <a href="mailto:${manager.email}" target="_blank">${manager.email}</a></p>
+      <p class="officeNumber">Office #: ${manager.officeNumber}</p>
     </div>`
       });
       const engineerCards = engineersArray.map(engineer => {
         return `  <div class="cardContainer">
-      <p class="name">${engineer.name}</p>
-      <p class="id">${engineer.id}</p>
-      <p class="email">${engineer.email}</p>
-      <p class="github">${engineer.github}</p>
+      <h1>${engineer.getRole()}</h1>
+      <p class="name">Name: ${engineer.name}</p>
+      <p class="id">ID#: ${engineer.id}</p>
+      <p class="email">Email: <a href="mailto:${engineer.email}" target="_blank">${engineer.email}</a></p>
+      <p class="github">Github URL: <a href="${engineer.github}" target="_blank">${engineer.github}</a></p>
     </div>`
       });
       const internCards = internsArray.map(intern => {
         return `  <div class="cardContainer">
-      <p class="name">${intern.name}</p>
-      <p class="id">${intern.id}</p>
-      <p class="email">${intern.email}</p>
-      <p class="school">${intern.school}</p>
+      <h1>${intern.getRole()}</h1>
+      <p class="name">Name: ${intern.name}</p>
+      <p class="id">ID#: ${intern.id}</p>
+      <p class="email">Email: <a href="mailto:${intern.email}" target="_blank">${intern.email}</a></p>
+      <p class="school">School: ${intern.school}</p>
     </div>`
       });
       const context = HTMLmarkdown(managersCards, engineerCards, internCards)
