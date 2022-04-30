@@ -75,7 +75,7 @@ function writeToFile(fileName, data) {
       const context = HTMLmarkdown(managersCards, engineerCards, internCards)
       // const context = HTMLmarkdown(managers[0]);
       console.log(context);
-      writeToFile("index.html", context);
+      writeToFile("./dist/index.html", context);
     }
 });
 }

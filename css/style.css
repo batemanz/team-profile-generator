@@ -21,6 +21,7 @@ header {
 .container {
     border: 2px solid whitesmoke;
     margin: 20px 8px;
+    padding: 18px;
     justify-content: space-around;
     /* align-items: center; */
 
@@ -33,6 +34,6 @@ header {
     padding: 8px;
     margin: 8px;
     box-shadow: 10px 10px 20px black;
-    min-width: 260px;
+    width: 300px;
     background-image: linear-gradient(olive, olivedrab);
 }

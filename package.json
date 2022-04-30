@@ -4,7 +4,7 @@
   "description": "node to create team profile in html",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/batemanz/team-profile-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.2"
-  },
-  "devDependencies": {}
+    "inquirer": "^8.2.2",
+    "jest": "^28.0.3"
+  }
 }
